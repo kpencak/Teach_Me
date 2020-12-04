@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Teach Me</string>
+    <string name="button_items">Dodaj pojęcia</string>
+    <string name="button_learn">Ucz się!</string>
+    <string name="text_menu">Witaj w TeachMe!</string>
+    <string name="dictionary_title">Lista pojęć</string>
+    <string name="delete_button">delete button</string>
+    <string name="checkbox_list">checkbox_list</string>
+    <string name="title_activity_new_dictionary_item">NewDictionaryItem</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="edit_text_name">Pojęcie</string>
+    <string name="edit_text_description">opis</string>
+    <string name="add_new_item">Dodaj nowe pojęcie</string>
+    <string name="add_new_item_error">Nie udało się dodać pojęcia</string>
+    <string name="btn_delete_all">Usuń wszystkie pojęcia</string>
+    <string name="choose_method_text">Wybierz metodę</string>
+    <string name="why_method">Dlaczego?</string>
+    <string name="cards_method">Fiszki</string>
+    <string name="diversed_practice_method">Rozproszona praktyka</string>
+    <string name="repeating_method">Powtarzanie</string>
+    <string name="mnemotechnics_method">Mnemotechniki</string>
+    <string name="teacher_method">Nauczyciel</string>
 </resources>
