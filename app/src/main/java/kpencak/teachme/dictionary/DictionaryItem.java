@@ -19,9 +19,13 @@ public class DictionaryItem {
     @ColumnInfo(name = "description")
     private String description;
 
-    public DictionaryItem(String name, String description) {
+    @ColumnInfo(name = "flashcards_level")
+    private int flashcards_level;
+
+    public DictionaryItem(String name, String description, int flashcards_level) {
         this.name = name;
         this.description = description;
+        this.flashcards_level = flashcards_level;
     }
 
     public Integer getId() {
@@ -42,5 +46,13 @@ public class DictionaryItem {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getFlashcards_level() {
+        return flashcards_level;
+    }
+
+    public void setFlashcards_level(int flashcards_level) {
+        this.flashcards_level = flashcards_level;
     }
 }

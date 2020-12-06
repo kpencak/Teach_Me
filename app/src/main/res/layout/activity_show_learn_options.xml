@@ -52,7 +52,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_method_1"
         app:layout_constraintTop_toBottomOf="@+id/choose_method_text"
-        android:text="@string/flashcards_method"/>
+        android:text="@string/flashcards_method"
+        android:onClick="goToFlashcardsMethod"/>
 
     <Button
         android:id="@+id/btn_method_3"

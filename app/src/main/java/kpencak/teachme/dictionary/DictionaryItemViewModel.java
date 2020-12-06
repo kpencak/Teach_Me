@@ -36,4 +36,12 @@ public class DictionaryItemViewModel extends AndroidViewModel {
     void deleteAllDictionary() {
         executorService.execute(() -> dictionaryItemDao.deleteAll());
     }
+
+    public List<DictionaryItem> getAllFromPartition(int partition_no) {
+        return dictionaryItemDao.getItemsForPartition(partition_no);
+    }
+
+    public void updateItem(int new_partition_no, String name) {
+        executorService.execute(() -> dictionaryItemDao.updateItem(new_partition_no, name));
+    }
 }

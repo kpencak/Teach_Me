@@ -80,7 +80,7 @@ public class ShowDictionaryActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, newItemData);
 
         if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
-            DictionaryItem newItem = new DictionaryItem(newItemData.getStringExtra("NAME_REPLY"), newItemData.getStringExtra("DESC_REPLY"));
+            DictionaryItem newItem = new DictionaryItem(newItemData.getStringExtra("NAME_REPLY"), newItemData.getStringExtra("DESC_REPLY"), 1);
             dictionaryViewModel.insertDictionaryItem(newItem);
         } else {
             Toast.makeText(getApplicationContext(), R.string.add_new_item_error, Toast.LENGTH_SHORT).show();

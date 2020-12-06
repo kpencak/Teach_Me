@@ -148,5 +148,17 @@
     <string name="btn_summary">Podsumowanie</string>
     <string name="title_activity_summary">SummaryActivity</string>
     <string name="go_back">Wróć do metod</string>
+    <string name="flashcards_method_name">Fiszki</string>
+    <string name="flashcards_method_desc">Fiszkami nazywamy metodę wykorzystującą kartoniki, gdzie po jednej stronie jest hasło/odpowiedź, a z drugiej opis/pytanie. Kartki umieszczane są w pudełku o 5 przegrodach, zaczynając od pierwszej. Metoda polega na przechodzeniu przez wszystkie pojęcia w danej przegrodzie. Jeśli poprawnie odpowiesz na pytanie na kartce to przenoszona jest ona do następnej przegrody, jeśli nie trafia na koniec tej, w której się znalazła.</string>
+    <string name="btn_flashcards_1">Przegródka 1</string>
+    <string name="btn_flashcards_2">Przegródka 2</string>
+    <string name="btn_flashcards_3">Przegródka 3</string>
+    <string name="btn_flashcards_4">Przegródka 4</string>
+    <string name="btn_flashcards_5">Przegródka 5</string>
+    <string name="btn_flashcards_learned">Nauczone</string>
+    <string name="good_answer">Znam</string>
+    <string name="bad_answer">Nie znam</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

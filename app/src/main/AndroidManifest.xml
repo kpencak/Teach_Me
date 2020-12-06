@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".flashcards_method.PartitionActivity"></activity>
+        <activity android:name=".flashcards_method.FlashcardsActivity" />
         <activity
             android:name=".why_method.SummaryActivity"
             android:label="@string/title_activity_summary"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".why_method.WhyMethodActivity"
             android:label="@string/title_activity_why_method"

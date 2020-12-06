@@ -25,4 +25,10 @@ public interface DictionaryItemDao {
 
     @Query("SELECT * FROM dictionary LIMIT 1")
     List<DictionaryItem> getAnyItem();
+
+    @Query("SELECT * FROM dictionary WHERE flashcards_level = :partition_no")
+    List<DictionaryItem> getItemsForPartition(int partition_no);
+
+    @Query("UPDATE dictionary SET flashcards_level = :new_partition_no WHERE name = :name")
+    void updateItem(int new_partition_no, String name);
 }

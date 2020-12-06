@@ -104,7 +104,7 @@ public class DictionaryRecyclerViewAdapter extends RecyclerView.Adapter<Dictiona
 
         @Override
         public boolean areItemsTheSame(int oldItemPosition, int newItemPosition) {
-            return oldDictionary.get(oldItemPosition).getId() == newDictionary.get(newItemPosition).getId();
+            return oldDictionary.get(oldItemPosition).getId().equals(newDictionary.get(newItemPosition).getId());
         }
 
         @Override
