@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import kpencak.teachme.diverse_practice_method.DiversePracticeActivity;
 import kpencak.teachme.flashcards_method.FlashcardsActivity;
 import kpencak.teachme.why_method.WhyMethodActivity;
 
@@ -26,11 +27,11 @@ public class ShowLearnOptionsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FlashcardsActivity.class);
         startActivity(intent);
     }
-//
-//    public void goToDiversePracticeMethod(View view) {
-//        Intent intent = new Intent(this, DiversePracticeActivity.class);
-//        startActivity(intent);
-//    }
+
+    public void goToDiversePracticeMethod(View view) {
+        Intent intent = new Intent(this, DiversePracticeActivity.class);
+        startActivity(intent);
+    }
 //
 //    public void goToRepeatingMethod(View view) {
 //        Intent intent = new Intent(this, RepeatingActivity.class);

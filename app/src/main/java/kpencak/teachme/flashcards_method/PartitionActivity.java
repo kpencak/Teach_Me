@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -42,14 +41,7 @@ public class PartitionActivity extends AppCompatActivity {
         List<DictionaryItem> dictionary = dictionaryViewModel.getAllFromPartition(partition_no);
 
         if (savedInstanceState == null) {
-            if (dictionary.size() == 0) {
-               text_inside_card.setText("Wszystko z tej przegródki powtórzone.");
-            } else {
-                dictionaryItemId = getRandomElement(dictionary);
-                dictionaryItem = dictionary.get(dictionaryItemId);
-                dictionary.remove(dictionaryItemId);
-                text_inside_card.setText(dictionaryItem.getDescription());
-            }
+            getNextItem(text_inside_card, dictionary);
         }
 
         cardView.setOnClickListener(view -> {
@@ -73,32 +65,29 @@ public class PartitionActivity extends AppCompatActivity {
                 }
             }
 
-            if (dictionary.size() != 0) {
-                dictionaryItemId = getRandomElement(dictionary);
-                dictionaryItem = dictionary.get(dictionaryItemId);
-                dictionary.remove(dictionaryItemId);
-                text_inside_card.setText(dictionaryItem.getDescription());
-            } else {
-                text_inside_card.setText("Wszystko z tej przegródki powtórzone.");
-            }
+            getNextItem(text_inside_card, dictionary);
 
             good_answer.setEnabled(false);
             bad_answer.setEnabled(false);
         });
 
         bad_answer.setOnClickListener(view -> {
-            if (dictionary.size() != 0) {
-                dictionaryItemId = getRandomElement(dictionary);
-                dictionaryItem = dictionary.get(dictionaryItemId);
-                dictionary.remove(dictionaryItemId);
-                text_inside_card.setText(dictionaryItem.getDescription());
-            } else {
-                text_inside_card.setText("Wszystko z tej przegródki powtórzone.");
-            }
+            getNextItem(text_inside_card, dictionary);
 
             good_answer.setEnabled(false);
             bad_answer.setEnabled(false);
         });
+    }
+
+    private void getNextItem(TextView text_inside_card, List<DictionaryItem> dictionary) {
+        if (dictionary.size() != 0) {
+            dictionaryItemId = getRandomElement(dictionary);
+            dictionaryItem = dictionary.get(dictionaryItemId);
+            dictionary.remove(dictionaryItemId);
+            text_inside_card.setText(dictionaryItem.getDescription());
+        } else {
+            text_inside_card.setText("Wszystko z tej przegródki powtórzone.");
+        }
     }
 
     private int getRandomElement(List<DictionaryItem> list) {

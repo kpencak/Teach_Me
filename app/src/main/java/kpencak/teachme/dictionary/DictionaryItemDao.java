@@ -31,4 +31,7 @@ public interface DictionaryItemDao {
 
     @Query("UPDATE dictionary SET flashcards_level = :new_partition_no WHERE name = :name")
     void updateItem(int new_partition_no, String name);
+
+    @Query("SELECT * FROM dictionary ORDER BY RANDOM() LIMIT :numberOfItems")
+    List<DictionaryItem> getRandItems(int numberOfItems);
 }

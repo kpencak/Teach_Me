@@ -1,7 +1,6 @@
 package kpencak.teachme.dictionary;
 
 import android.app.Application;
-import android.os.AsyncTask;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -43,5 +42,9 @@ public class DictionaryItemViewModel extends AndroidViewModel {
 
     public void updateItem(int new_partition_no, String name) {
         executorService.execute(() -> dictionaryItemDao.updateItem(new_partition_no, name));
+    }
+
+    public List<DictionaryItem> getRandomItems(int number_of_items) {
+        return dictionaryItemDao.getRandItems(number_of_items);
     }
 }

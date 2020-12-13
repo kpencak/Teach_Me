@@ -24,7 +24,7 @@
     <string name="why_method">Dlaczego?</string>
     <string name="flashcards_method">Fiszki</string>
     <string name="diversed_practice_method">Rozproszona praktyka</string>
-    <string name="repeating_method">Powtarzanie</string>
+    <string name="tests_method">Wielokrotne zderzenia</string>
     <string name="mnemotechnics_method">Mnemotechniki</string>
     <string name="teacher_method">Nauczyciel</string>
     <string name="title_activity_why_method">ScrollingActivity</string>
@@ -149,7 +149,13 @@
     <string name="title_activity_summary">SummaryActivity</string>
     <string name="go_back">Wróć do metod</string>
     <string name="flashcards_method_name">Fiszki</string>
-    <string name="flashcards_method_desc">Fiszkami nazywamy metodę wykorzystującą kartoniki, gdzie po jednej stronie jest hasło/odpowiedź, a z drugiej opis/pytanie. Kartki umieszczane są w pudełku o 5 przegrodach, zaczynając od pierwszej. Metoda polega na przechodzeniu przez wszystkie pojęcia w danej przegrodzie. Jeśli poprawnie odpowiesz na pytanie na kartce to przenoszona jest ona do następnej przegrody, jeśli nie trafia na koniec tej, w której się znalazła.</string>
+    <string name="flashcards_method_desc">
+        Fiszkami nazywamy metodę wykorzystującą kartoniki, gdzie po jednej stronie jest
+        hasło/odpowiedź, a z drugiej opis/pytanie. Kartki umieszczane są w pudełku o 5 przegrodach,
+        zaczynając od pierwszej. Metoda polega na przechodzeniu przez wszystkie pojęcia w danej
+        przegrodzie. Jeśli poprawnie odpowiesz na pytanie na kartce to przenoszona jest ona do
+        następnej przegrody, jeśli nie trafia na koniec tej, w której się znalazła.
+    </string>
     <string name="btn_flashcards_1">Przegródka 1</string>
     <string name="btn_flashcards_2">Przegródka 2</string>
     <string name="btn_flashcards_3">Przegródka 3</string>
@@ -158,7 +164,19 @@
     <string name="btn_flashcards_learned">Nauczone</string>
     <string name="good_answer">Znam</string>
     <string name="bad_answer">Nie znam</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="diverse_practice_method_desc">
+        Metoda polega na powtarzaniu materiału w taki sposób, aby pozwolić sobie go zapomnieć przed
+        ponownym powtórzeniem. Dodatkowo materiał można podzielić na części i powtarzać seriami. W
+        ten sposób mózg przed kolejną powtórką materiału musi sobie przypomnieć wcześniejsze
+        informacje, co sprawia, że lepiej je zapamiętuje.
+    </string>
+    <string name="settings_text">Ustawienia powtórek</string>
+    <string name="start_learning">Rozpocznij naukę</string>
+    <string name="reset_settings">Resetuj ustawienia</string>
+    <string name="btn_next">Następny</string>
+    <string name="btn_prev">Poprzedni</string>
+    <string name="long_placeholder">placeholder very very very very very very very very very very very very very very very very long</string>
+    <string name="placeholder">placeholder</string>
+    <string name="items_to_repeat">Liczba elementów w sesji</string>
 
 </resources>

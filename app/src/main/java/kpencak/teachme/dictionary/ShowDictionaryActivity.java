@@ -28,8 +28,8 @@ public class ShowDictionaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_dictionary);
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.dictionaryList);
-        recyclerViewAdapter = new DictionaryRecyclerViewAdapter(this);
+        RecyclerView recyclerView = findViewById(R.id.dictionaryList);
+        recyclerViewAdapter = new DictionaryRecyclerViewAdapter();
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -67,7 +67,7 @@ public class ShowDictionaryActivity extends AppCompatActivity {
                 public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
                     int position = viewHolder.getAdapterPosition();
                     DictionaryItem item = recyclerViewAdapter.getItemAtPosition(position);
-                    Toast.makeText(getApplicationContext(), "Usunięto " + item.getName(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Usunięto " + item.getName(), Toast.LENGTH_SHORT).show();
 
                     dictionaryViewModel.deleteDictionaryItem(item);
                 }

@@ -1,17 +1,11 @@
 package kpencak.teachme.dictionary;
 
-import androidx.lifecycle.ViewModel;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.database.SQLException;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import kpencak.teachme.R;
@@ -23,7 +17,7 @@ public class DictionaryRecyclerViewAdapter extends RecyclerView.Adapter<Dictiona
 
     private List<DictionaryItem> dictionary;
 
-    public DictionaryRecyclerViewAdapter(ShowDictionaryActivity showDictionaryActivity) {
+    public DictionaryRecyclerViewAdapter() {
         this.dictionary = new ArrayList<>();
     }
 
@@ -79,8 +73,8 @@ public class DictionaryRecyclerViewAdapter extends RecyclerView.Adapter<Dictiona
         public DictionaryViewHolder(View view) {
             super(view);
             this.view = view;
-            name = (TextView) view.findViewById(R.id.dictionary_item_name);
-            description = (TextView) view.findViewById(R.id.dictionary_item_description);
+            name = view.findViewById(R.id.dictionary_item_name);
+            description = view.findViewById(R.id.dictionary_item_description);
         }
     }
 
