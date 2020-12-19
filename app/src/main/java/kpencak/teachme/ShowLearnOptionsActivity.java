@@ -8,6 +8,7 @@ import android.view.View;
 
 import kpencak.teachme.diverse_practice_method.DiversePracticeActivity;
 import kpencak.teachme.flashcards_method.FlashcardsActivity;
+import kpencak.teachme.mnemotechnics.MnemoActivity;
 import kpencak.teachme.repeating_method.RepeatingActivity;
 import kpencak.teachme.why_method.WhyMethodActivity;
 
@@ -38,11 +39,11 @@ public class ShowLearnOptionsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RepeatingActivity.class);
         startActivity(intent);
     }
-//
-//    public void goToMnemotechnicMethod(View view) {
-//        Intent intent = new Intent(this, MnemotechnicActivity.class);
-//        startActivity(intent);
-//    }
+
+    public void goToMnemotechnicMethod(View view) {
+        Intent intent = new Intent(this, MnemoActivity.class);
+        startActivity(intent);
+    }
 //
 //    public void goToTeacherMethod(View view) {
 //        Intent intent = new Intent(this, TeacherActivity.class);

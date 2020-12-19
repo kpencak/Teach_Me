@@ -102,7 +102,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_method_3"
-        android:text="@string/mnemotechnics_method"/>
+        android:text="@string/mnemotechnics_method"
+        android:onClick="goToMnemotechnicMethod"/>
 
     <Button
         android:id="@+id/btn_method_6"

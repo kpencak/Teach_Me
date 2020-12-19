@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".repeating_method.SummaryTestActivity"></activity>
+        <activity android:name=".teacher_method.TeacherActivity"></activity>
+        <activity android:name=".mnemotechnics.ChainsActivity" />
+        <activity android:name=".mnemotechnics.AcronymsActivity" />
+        <activity android:name=".mnemotechnics.RhymesActivity" />
+        <activity android:name=".mnemotechnics.PalaceActivity" />
+        <activity android:name=".mnemotechnics.MnemoActivity" />
+        <activity android:name=".repeating_method.SummaryTestActivity" />
         <activity
             android:name=".repeating_method.TestActivity"
             android:label="@string/title_activity_test"

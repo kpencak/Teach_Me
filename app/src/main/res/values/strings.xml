@@ -16,7 +16,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="edit_text_name">Pojęcie</string>
-    <string name="edit_text_description">opis</string>
+    <string name="edit_text_description">Opis</string>
     <string name="add_new_item">Dodaj nowe pojęcie</string>
     <string name="add_new_item_error">Nie udało się dodać pojęcia</string>
     <string name="btn_delete_all">Usuń wszystkie pojęcia</string>
@@ -197,5 +197,82 @@
     <string name="end_test">Zakończ test</string>
     <string name="back">Wróć</string>
     <string name="reset_partitions">Resetuj numery przegródek</string>
+    <string name="mnemotechnics_desc">
+        Mnemotechniki to zbiór metod, które ułatwiają zapamiętywanie oraz przypominanie sobie
+        informacji. Najczęściej są to metody polegające na skojarzeniach, rytmice lub kategoryzacji.
+        Poniżej znajdziesz opis kilku takich metod i przykłady jak je zastosować.
+    </string>
+    <string name="palace">Pałac pamięci</string>
+    <string name="rhymes">Rymowanki</string>
+    <string name="acronyms">Akronimy</string>
+    <string name="chains">Łańcuchy skojarzeń</string>
+    <string name="palace_desc">
+        Koncepcja pałacu pamięci znana jest już od starożytności. Szczegolnie wykorzystywana była \nw
+        średniowieczu np. przez mnichów do zapamiętywania receptur leczniczych, jak również w Anglii,
+        gdzie była nauczana w wielu szkołach. Korzystając z wyobraźni w znanych sobie lub 
+        wyimaginowanych miejscach umieszczamy inne obrazy, przedmioty, osoby.
+    </string>
+    <string name="palace_steps">
+        1. Wyobraź sobie jakieś miejsce, po którym potrafisz się poruszać. Może to być np. Twój dom
+        lub miejsce pracy albo szkoła. Nic nie stoi na przeszkodzie, żeby było to też wymyślone
+        miejsce, jednak musi być ona Ci dobrze znane. \n \n
+        2. Powiąż informację, którą chcesz zapamiętać z jakąś rzeczą lub osobą. Im bardziej zabawne,
+        oburzające lub wyolbrzymione skojarzenie tym lepiej. \n \n
+        3. Umieść daną rzecz w pomieszczeniu Twojego pałacu.
+    </string>
+    <string name="palace_example">
+        Przykład: \n\nStarożytni mówcy, aby zapamiętać kolejność tematów w swoich przemowach używali
+        pałaców pamięci. Chcąc zacząć przemowę np. od nawiązania do Juliusza Cezara umieszczali oni
+        w przedsionku swojego pałacu, czyli w pierwszym napotkanym pomieszczeniu postać Cezara.
+        Gdyby jednak chcieli nawiązać przekroczenia przez Cezara Rubikonu mogli go sobie wyobrazić z
+        kośćmi do gry, co jest nawiązaniem do słów, które miał wtedy powiedzieć, czyli: "Kości zostały rzucone".
+    </string>
+    <string name="rhymes_desc">
+        Metoda znana głównie przedszkolakom i uczniom w nauczaniu wczesnoszkolnym, ale równie
+        skuteczna, co pozostałe wymienione. Nasze mózgi lubią rytmy i powtarzające się sekwencje,
+        stąd też tak często pamiętamy tekst piosenki zamiast nudnych i suchych faktów. Układając
+        rymowanki i wierszyki wiadomości w nich zawarte szybciej są zapamiętywane.
+    </string>
+    <string name="rhymes_example">Przykłady:\nStudenci medycyny chcąc zapamiętać nazwy i kolejność kości nadgarstka
+        posługują się nastepującym wierszykiem:\n<b>Łódka</b> płynie, <b>Księżyc</b> świeci,
+        <b>Trójgraniasty Groszek</b> leci.\nNa <b>Trapezie</b>, <b>Trapeziku</b>, wisi <b>Główka</b>
+        na <b>Haczyku.</b>\n\nIstnieje też angielski odpowiednik tego wierszyka odnoszący się do
+        łacińskich nazw tych kości.\n\nMatematycy również mają swój wierszyk pozwalający zapamiętać
+        znaki funkcji trygonometrycznych w ćwiartkach układu kartezjańskiego:\n<i>W pierwszej
+        wszystkie są dodatnie,\nw drugiej tylko sinus\nw trzeciej tangens i cotanges\na w czwartej
+        cosinus.</i>\n\nRóżne rymowanki można też spotkać przy okazji nauki zasad ortograficznych,
+        czy dat historycznych:\n<i>Jeden, cztery, dziewięć, dwa, Kolumb w długą drogę gna.</i>
+    </string>
+    <string name="acronyms_desc">
+        Akronimy z definicji to słowa utworzone poprzez skrócenie wrażenia. W tej metodzie oprócz
+        typowych skrótowców wzięte zostały pod uwagę zdania, w których pierwsze litery wyrazów
+        wskazują na inne słowa. Dodatkowo same akronimy można podzielić na dwie podkategorie,
+        akronimy znaczace, gdzie skróty same w sobie też mają jakieś dodatkowe znaczenie oraz
+        nieznaczące, będące po prostu zlepkiem liter.
+    </string>
+    <string name="acronyms_example">Przykłady:\nUcząc się geografii czy fizyki można znaleźć wiele zdań lub akronimów, które
+        pomagają w uczeniu się:\n<i><b>N</b>a <b>E</b>kranie <b>S</b>iedzi <b>W</b>rona</i> -
+        symbole kierunków świata na kompasie\n<i><b>M</b>oją <b>W</b>olę <b>Z</b>naj <b>M</b>atole.
+        <b>J</b>ak <b>S</b>ię <b>U</b>prę, <b>N</b>ie <b>P</b>ozwolę.</i> - kolejne planety Układu
+        Słonecznego\n<i>HOMES</i> - lista wielkich jezior amerykańskich\n<i><b>C</b>zemu
+        <b>P</b>atrzysz <b>Ż</b>abko <b>Z</b>ielona <b>N</b>a <b>G</b>nuśnego <b>F</b>anfarona</i> -
+        kolejne barwy tęczy
+    </string>
+    <string name="chains_desc">
+        Łańcuchowa metoda skojarzeń polega na tworzeniu w głowie obrazów, które potem powinny łączyć
+        się w jedną historię. Zaprzęgnięcie wyobraźni w połączeniu z wyolbrzymionymi skojarzeniami
+        pozwala na zapamiętanie dłużej ilości informacji i szybsze przywoływanie ich z pamięci. Poza
+        tym raz stworzoną historią można się dzielić z innymi, pomagając im w nauce.
+    </string>
+    <string name="chains_example">Przykład:\n\nWeźmy na warsztat listę zakupów, która składa się z
+        następujących produktów: bułki, jajka, mleko, kawa i płatki.\nZamiast zapisywać te rzeczy na kartce
+        ułóżmy historię, która będzie zabawna, dynamiczna i będzie angażować jak najwięcej zmysłów.
+        \n\nWstaję rano, przecieram oczy i udaję się na śniadanie, bo jestem głodna. W kuchni sięgam
+        po <b>bułki</b>, które okazują się być tak twarde, że połamię sobie na nich zęby. Otwieram
+        więc szafkę, aby wyciągnąć stamtąd <b>płatki</b>. Nasypuję je do miski i idę do lodówki
+        wyciągnąć <b>mleko</b>. Gdy go otwieram, okazuje się, że w kartonie nie ma ani kropli, więc
+        decyduję się na <b>jajka</b>. W międzyczasie nastawiam wodę na aromatyczną <b>kawę</b>,
+        którą wypiję z niesmakiem, bo nie ma do niej mleka.
+    </string>
 
 </resources>
