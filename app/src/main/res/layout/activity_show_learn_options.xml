@@ -85,7 +85,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_method_3"
         app:layout_constraintTop_toBottomOf="@+id/btn_method_2"
-        android:text="@string/tests_method"/>
+        android:text="@string/tests_method"
+        android:onClick="goToRepeatingMethod"/>
 
     <Button
         android:id="@+id/btn_method_5"

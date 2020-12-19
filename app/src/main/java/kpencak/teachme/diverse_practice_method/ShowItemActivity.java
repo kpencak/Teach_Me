@@ -32,12 +32,7 @@ public class ShowItemActivity extends AppCompatActivity {
         else
             numberOfItems = 10;
 
-        try {
-            DictionaryItemViewModel dictionaryViewModel = new ViewModelProvider(this).get(DictionaryItemViewModel.class);
-            dictionary = dictionaryViewModel.getRandomItems(numberOfItems);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        getItemsFromDictionary();
 
         dictionaryItemIterator = dictionary.listIterator(0);
 
@@ -76,5 +71,14 @@ public class ShowItemActivity extends AppCompatActivity {
                 prev.setEnabled(false);
             }
         });
+    }
+
+    private void getItemsFromDictionary() {
+        try {
+            DictionaryItemViewModel dictionaryViewModel = new ViewModelProvider(this).get(DictionaryItemViewModel.class);
+            dictionary = dictionaryViewModel.getRandomItems(numberOfItems);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

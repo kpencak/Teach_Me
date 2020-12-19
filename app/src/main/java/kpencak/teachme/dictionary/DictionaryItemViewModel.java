@@ -47,4 +47,6 @@ public class DictionaryItemViewModel extends AndroidViewModel {
     public List<DictionaryItem> getRandomItems(int number_of_items) {
         return dictionaryItemDao.getRandItems(number_of_items);
     }
+
+    public List<DictionaryItem> getAllList() { return dictionaryItemDao.getAllList(); }
 }

@@ -14,6 +14,9 @@ public interface DictionaryItemDao {
     @Query("SELECT * FROM dictionary")
     LiveData<List<DictionaryItem>> getAll();
 
+    @Query("SELECT * FROM dictionary")
+    List<DictionaryItem> getAllList();
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insert(DictionaryItem item);
 

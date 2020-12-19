@@ -21,6 +21,7 @@ public class PartitionActivity extends AppCompatActivity {
 
     DictionaryItem dictionaryItem;
     int dictionaryItemId;
+    List<DictionaryItem> dictionary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +38,12 @@ public class PartitionActivity extends AppCompatActivity {
         String name = "Przegródka " + partition_no;
         partition_name.setText(name);
 
-        dictionaryViewModel = new ViewModelProvider(this).get(DictionaryItemViewModel.class);
-        List<DictionaryItem> dictionary = dictionaryViewModel.getAllFromPartition(partition_no);
+        try {
+            dictionaryViewModel = new ViewModelProvider(this).get(DictionaryItemViewModel.class);
+            dictionary = dictionaryViewModel.getAllFromPartition(partition_no);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         if (savedInstanceState == null) {
             getNextItem(text_inside_card, dictionary);

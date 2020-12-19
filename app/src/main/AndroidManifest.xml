@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".diverse_practice_method.ShowItemActivity"></activity>
+        <activity android:name=".repeating_method.SummaryTestActivity"></activity>
+        <activity
+            android:name=".repeating_method.TestActivity"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".repeating_method.RepeatingActivity" />
+        <activity android:name=".diverse_practice_method.ShowItemActivity" />
         <activity android:name=".diverse_practice_method.DiversePracticeActivity" />
         <activity android:name=".flashcards_method.PartitionActivity" />
         <activity android:name=".flashcards_method.FlashcardsActivity" />
