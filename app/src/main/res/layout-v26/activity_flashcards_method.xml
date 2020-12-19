@@ -116,24 +116,24 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/btn_flashcards_5"
-        app:layout_constraintBottom_toTopOf="@+id/btn_flashcards_learned"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reset_partitions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_flashcards_4" />
 
     <Button
-        android:id="@+id/btn_flashcards_learned"
+        android:id="@+id/btn_reset_partitions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/btn_flashcards_learned"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/reset_partitions"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_flashcards_5"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_flashcards_5"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,4 +49,6 @@ public class DictionaryItemViewModel extends AndroidViewModel {
     }
 
     public List<DictionaryItem> getAllList() { return dictionaryItemDao.getAllList(); }
+
+    public void resetPartitions() { executorService.execute(() -> dictionaryItemDao.resetPartitions());}
 }
