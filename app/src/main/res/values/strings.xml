@@ -274,5 +274,17 @@
         decyduję się na <b>jajka</b>. W międzyczasie nastawiam wodę na aromatyczną <b>kawę</b>,
         którą wypiję z niesmakiem, bo nie ma do niej mleka.
     </string>
+    <string name="teacher_desc">
+        Metoda nauczyciela opiera się na tym, że w rolę nauczyciela wcielisz się właśnie Ty. Więc na
+        jego wzór opowiadasz komuś jakieś zagadnienie i odpowiadasz na jego pytania, które będą
+        zgłębiały temat. W ten sposób uczą się dwie osoby na raz. Równie dobrze ta metoda sprawdza
+        się, gdy zamiast opowiadania tłumaczymy coś rozkładając to na czynniki pierwsze.
+    </string>
+    <string name="teacher_steps">
+        Poniżej pojawił się awatar Agnieszki. Potraktuj ją jako swoją uczennicę, której będziesz
+        tłumaczyć jakieś zagadnienie. Możesz opisywać wszystko za jednym razem, ale warte spróbowania
+        jest też np. tłumaczenie każdego zdania przeczytanego z książki. Może Agnieszka nie zada Ci
+        jakichś piorunująco celnych pytań, ale z chęcią wyslucha, co masz jej do powiedzenia.
+    </string>
 
 </resources>
