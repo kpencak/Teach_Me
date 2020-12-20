@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:gravity="center|center_horizontal|center_vertical"
         android:text="@string/text_menu"
+        android:textColor="@color/textColor"
         android:textSize="36sp"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/button2"

@@ -17,6 +17,7 @@
         android:layout_marginRight="16dp"
         android:gravity="center_horizontal"
         android:text="@string/choose_method_text"
+        android:textColor="@color/textColor"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

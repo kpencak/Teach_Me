@@ -16,6 +16,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/flashcards_method"
+        android:textColor="@color/textColor"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +32,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        android:background="#FFC107"
+        android:background="@color/colorPrimary"
         android:padding="8dp"
         android:text="@string/flashcards_method_desc"
         android:textColor="?android:attr/textColorPrimaryInverse"
@@ -131,9 +132,10 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/reset_partitions"
-        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint="@color/redButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_flashcards_5"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_flashcards_5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

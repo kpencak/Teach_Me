@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import kpencak.teachme.R;
 
@@ -23,8 +24,12 @@ public class DiversePracticeActivity extends AppCompatActivity {
             EditText itemsToRepeat = findViewById(R.id.items_to_repeat);
             String numberOfItemsStr = itemsToRepeat.getText().toString();
             int numberOfItems = Integer.parseInt(numberOfItemsStr);
-            intent.putExtra("numberOfItems", numberOfItems);
-            startActivity(intent);
+            if (numberOfItems < 1)
+                Toast.makeText(this, "Liczba elementów musi być dodatnia", Toast.LENGTH_SHORT).show();
+            else {
+                intent.putExtra("numberOfItems", numberOfItems);
+                startActivity(intent);
+            }
         });
     }
 }

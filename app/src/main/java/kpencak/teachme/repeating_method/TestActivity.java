@@ -1,6 +1,7 @@
 package kpencak.teachme.repeating_method;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -128,6 +129,7 @@ public class TestActivity extends AppCompatActivity {
         for(int i = 1; i <= numberOfAnswers; i++) {
             RadioButton radioButton = new RadioButton(this);
             radioButton.setId(i*10);
+            radioButton.setTextColor(Color.parseColor("#0B2027"));
             radioGroup.addView(radioButton);
         }
     }
