@@ -107,7 +107,11 @@ public class TestActivity extends AppCompatActivity {
     }
 
     private void getQuestions() {
-        while (questionsIds.size() < 10) {
+        int repeating_size = 10;
+        if (dictionary.size() < 10) {
+            repeating_size = dictionary.size();
+        }
+        while (questionsIds.size() < repeating_size) {
             int index = getRandomElement(dictionary);
             if (!questionsIds.contains(index))
                 questionsIds.add(index);

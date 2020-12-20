@@ -8,4 +8,5 @@
     <color name="textColor">#0B2027</color>
     <color name="redButton">#F53D3D</color>
     <color name="disabled">#8F8F8F</color>
+    <color name="cardView">#C2C2C2</color>
 </resources>
