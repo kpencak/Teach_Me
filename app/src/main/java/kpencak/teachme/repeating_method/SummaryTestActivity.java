@@ -22,8 +22,9 @@ public class SummaryTestActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         ArrayList<Integer> userAnswers = extras.getIntegerArrayList("userAnswers");
+        int max_points = extras.getInt("max_points");
 
-        setScore(userAnswers);
+        setScore(userAnswers, max_points);
 
         Button goBack = findViewById(R.id.btn_back);
         goBack.setOnClickListener(view -> {
@@ -32,7 +33,7 @@ public class SummaryTestActivity extends AppCompatActivity {
         });
     }
 
-    private void setScore(ArrayList<Integer> userAnswers) {
+    private void setScore(ArrayList<Integer> userAnswers, int max_points) {
         int score = 0;
 
         for (Integer i : userAnswers) {
@@ -41,14 +42,14 @@ public class SummaryTestActivity extends AppCompatActivity {
         }
 
         TextView scoreText = findViewById(R.id.score);
-        String scoreStr = score + "/10";
+        String scoreStr = score + "/" + max_points;
         scoreText.setText(scoreStr);
 
         TextView message = findViewById(R.id.messageSummary);
         String messageStr;
-        if (score < 4)
+        if (score < max_points*0.25)
             messageStr = "Musisz jeszcze trochę popracować";
-        else if (score < 7)
+        else if (score < max_points*0.75)
             messageStr = "Jesteś na dobrej drodze!";
         else
             messageStr = "Świetna robota!";

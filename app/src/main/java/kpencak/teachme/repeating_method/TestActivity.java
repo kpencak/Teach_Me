@@ -35,6 +35,7 @@ public class TestActivity extends AppCompatActivity {
     ListIterator<Integer> questionsIterator;
     Random random = new Random();
     DictionaryItem correctItem;
+    int repeating_size = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +77,7 @@ public class TestActivity extends AppCompatActivity {
                 if (next_btn.getText().equals("Zakończ test")) {
                     Intent intent = new Intent(this, SummaryTestActivity.class);
                     intent.putExtra("userAnswers", userAnswers);
+                    intent.putExtra("max_points", repeating_size);
                     startActivityForResult(intent, SUMMARY_TEST_ACTIVITY_REQUEST_CODE);
                 } else {
                     if (questionsIterator.nextIndex() == 9) {
@@ -107,7 +109,6 @@ public class TestActivity extends AppCompatActivity {
     }
 
     private void getQuestions() {
-        int repeating_size = 10;
         if (dictionary.size() < 10) {
             repeating_size = dictionary.size();
         }

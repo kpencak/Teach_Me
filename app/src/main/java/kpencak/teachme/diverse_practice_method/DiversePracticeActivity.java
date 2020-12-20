@@ -28,16 +28,20 @@ public class DiversePracticeActivity extends AppCompatActivity {
             Intent intent = new Intent(this, ShowItemActivity.class);
             EditText itemsToRepeat = findViewById(R.id.items_to_repeat);
             String numberOfItemsStr = itemsToRepeat.getText().toString();
-            int numberOfItems = Integer.parseInt(numberOfItemsStr);
-            DictionaryItemViewModel dictionaryViewModel = new ViewModelProvider(this).get(DictionaryItemViewModel.class);
-            List<DictionaryItem> dictionary = dictionaryViewModel.getAllList();
-            if (numberOfItems < 1)
-                Toast.makeText(this, "Liczba elementów musi być dodatnia", Toast.LENGTH_SHORT).show();
-            else if (dictionary.size() < numberOfItems)
-                Toast.makeText(this, "W bazie jest mniej elementów niż podana liczba", Toast.LENGTH_LONG).show();
+            if (numberOfItemsStr.isEmpty())
+                Toast.makeText(this, "Musisz podać liczbę elementów", Toast.LENGTH_LONG).show();
             else {
-                intent.putExtra("numberOfItems", numberOfItems);
-                startActivity(intent);
+                int numberOfItems = Integer.parseInt(numberOfItemsStr);
+                DictionaryItemViewModel dictionaryViewModel = new ViewModelProvider(this).get(DictionaryItemViewModel.class);
+                List<DictionaryItem> dictionary = dictionaryViewModel.getAllList();
+                if (numberOfItems < 1)
+                    Toast.makeText(this, "Liczba elementów musi być dodatnia", Toast.LENGTH_SHORT).show();
+                else if (dictionary.size() < numberOfItems)
+                    Toast.makeText(this, "W bazie jest mniej elementów niż podana liczba", Toast.LENGTH_LONG).show();
+                else {
+                    intent.putExtra("numberOfItems", numberOfItems);
+                    startActivity(intent);
+                }
             }
         });
     }
